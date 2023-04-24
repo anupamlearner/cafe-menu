@@ -1,0 +1,87 @@
+/* -------------------------------------------- */
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Sue+Ellen+Francisco&display=swap");
+/* -------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* font: inherit; */
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  min-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* -------------------------------------------------- */
+/* Utilities  */
+.center-text {
+  text-align: center;
+}
+
+.title-font {
+  font-family: "Josefin Sans", sans-serif;
+}
+.fancy {
+  font-family: "Sue Ellen Francisco", cursive;
+}
+/* -------------------------------------------------- */
+
+.container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container::before {
+  content: " ";
+  display: block;
+  inset: 0;
+  position: absolute;
+  align-items: center;
+  background-image: url("/assets/images/beans.jpg");
+  background-repeat: no-repeat;
+  /* background-position: 50% 0; */
+  background-size: cover;
+  z-index: -1;
+  filter: blur(5px) brightness(0.5);
+}
+
+.card {
+  border: 1px solid red;
+  padding: 1em;
+  border-radius: 2em;
+  background-color: #642c25;
+  color: #fff;
+}
+
+.item-info {
+  display: flex;
+  justify-content: space-between;
+}
