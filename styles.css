@@ -1,6 +1,6 @@
 /* -------------------------------------------- */
 /* fonts */
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Sue+Ellen+Francisco&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Sue+Ellen+Francisco&display=swap"); */
 /* -------------------------------------------- */
 *,
 *::before,
@@ -84,4 +84,30 @@ a {
 .item-info {
   display: flex;
   justify-content: space-between;
+}
+
+.menu__item-icon {
+  margin-inline: auto;
+  width: 4em;
+}
+
+.menu__item {
+  font-size: 2rem;
+}
+
+.menu-section {
+  margin-top: 2rem;
+}
+
+.item-info {
+  margin-top: 3rem;
+}
+
+h1,
+h2 {
+  margin-bottom: 1rem;
+}
+
+hr {
+  margin-block: 1rem;
 }
