@@ -45,10 +45,10 @@ a {
 }
 
 .title-font {
-  font-family: "Josefin Sans", sans-serif;
+  /* font-family: "Josefin Sans", sans-serif; */
 }
 .fancy {
-  font-family: "Sue Ellen Francisco", cursive;
+  /* font-family: "Sue Ellen Francisco", cursive; */
 }
 /* -------------------------------------------------- */
 
@@ -96,7 +96,7 @@ a {
 }
 
 .menu-section {
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .item-info {
