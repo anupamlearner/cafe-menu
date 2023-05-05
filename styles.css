@@ -45,49 +45,42 @@ ul {
 a {
   text-decoration: none;
 }
+
 /* -------------------------------------------------- */
 /* Utilities  */
 .center-text {
   text-align: center;
 }
-
 /* -------------------------------------------------- */
 
-.bg-box {
-  position: relative;
-  overflow: hidden;
-}
-
-.bg-image {
-  position: absolute;
-  z-index: -1;
-  object-fit: cover;
-  inset: 0;
-  filter: blur(2px) grayscale(0.65);
-}
-
 .container {
-  position: relative;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url(./assets/images/beans.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsla(174, 78%, 33%, 0.7);
+  background-blend-mode: lighten;
 }
 
 .card {
-  /* ---center the card within its container---*/
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* ---------------------------- */
-  min-width: 290px;
+  /* min-width: 290px; */
   width: 80%;
-  padding: 3em 2em;
   border-radius: 2em;
   background-color: #642c25;
+  padding: 0.5em 0;
   color: #fff;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.main-title {
+  font-size: 3rem;
 }
 
 .est-date {
@@ -98,6 +91,7 @@ a {
 
 .food-section {
   width: 100%;
+  padding-inline: 1em;
 }
 
 .card > .food-section {
@@ -125,7 +119,7 @@ a {
 }
 
 .menu__entry {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 hr {
@@ -140,8 +134,11 @@ hr {
 }
 
 .footer {
-  margin-top: 0.25rem;
-  font-size: 1.4rem;
+  /* margin-top: 0.25rem; */
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ----Media queries --- */
@@ -154,7 +151,8 @@ hr {
     font-size: 4rem;
   }
   .menu__entry {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    font-weight: 100;
   }
   .food-category-title {
     font-size: 2.4rem;
